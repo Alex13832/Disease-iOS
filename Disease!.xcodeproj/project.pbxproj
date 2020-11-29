@@ -15,6 +15,11 @@
 		1168599A25742C3E00B79F7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1168599825742C3E00B79F7B /* LaunchScreen.storyboard */; };
 		116859A525742C3E00B79F7B /* Disease_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116859A425742C3E00B79F7B /* Disease_Tests.swift */; };
 		116859B025742C3E00B79F7B /* Disease_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116859AF25742C3E00B79F7B /* Disease_UITests.swift */; };
+		116859C125742C9900B79F7B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116859C025742C9900B79F7B /* CustomButton.swift */; };
+		116859C625742E1900B79F7B /* ButtonGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116859C525742E1900B79F7B /* ButtonGrid.swift */; };
+		116859D12574318D00B79F7B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116859D02574318D00B79F7B /* UserData.swift */; };
+		116859D925743A7F00B79F7B /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116859D825743A7F00B79F7B /* CustomImage.swift */; };
+		116859DE25743EBB00B79F7B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116859DD25743EBB00B79F7B /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		116859AB25742C3E00B79F7B /* Disease!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Disease!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		116859AF25742C3E00B79F7B /* Disease_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disease_UITests.swift; sourceTree = "<group>"; };
 		116859B125742C3E00B79F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		116859C025742C9900B79F7B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		116859C525742E1900B79F7B /* ButtonGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGrid.swift; sourceTree = "<group>"; };
+		116859D02574318D00B79F7B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		116859D825743A7F00B79F7B /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
+		116859DD25743EBB00B79F7B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +109,10 @@
 		1168598C25742C3D00B79F7B /* Disease! */ = {
 			isa = PBXGroup;
 			children = (
+				116859ED2574442E00B79F7B /* SupportingViews */,
+				116859F12574445300B79F7B /* Model */,
 				1168598D25742C3D00B79F7B /* AppDelegate.swift */,
+				116859D825743A7F00B79F7B /* CustomImage.swift */,
 				1168598F25742C3D00B79F7B /* SceneDelegate.swift */,
 				1168599125742C3D00B79F7B /* ContentView.swift */,
 				1168599325742C3E00B79F7B /* Assets.xcassets */,
@@ -134,6 +147,24 @@
 				116859B125742C3E00B79F7B /* Info.plist */,
 			);
 			path = "Disease!UITests";
+			sourceTree = "<group>";
+		};
+		116859ED2574442E00B79F7B /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				116859C025742C9900B79F7B /* CustomButton.swift */,
+				116859C525742E1900B79F7B /* ButtonGrid.swift */,
+				116859DD25743EBB00B79F7B /* SearchBar.swift */,
+			);
+			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		116859F12574445300B79F7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				116859D02574318D00B79F7B /* UserData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				116859D925743A7F00B79F7B /* CustomImage.swift in Sources */,
+				116859D12574318D00B79F7B /* UserData.swift in Sources */,
+				116859C125742C9900B79F7B /* CustomButton.swift in Sources */,
 				1168598E25742C3D00B79F7B /* AppDelegate.swift in Sources */,
 				1168599025742C3D00B79F7B /* SceneDelegate.swift in Sources */,
+				116859DE25743EBB00B79F7B /* SearchBar.swift in Sources */,
+				116859C625742E1900B79F7B /* ButtonGrid.swift in Sources */,
 				1168599225742C3D00B79F7B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

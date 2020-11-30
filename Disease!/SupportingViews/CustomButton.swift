@@ -11,9 +11,8 @@ import SwiftUI
 
 struct CustomButton: View {
     var labelText: String
-    //var isPlus: Bool
     @EnvironmentObject private var userData: UserData
-    @State private var isPlus = true
+    @State private var isPlus: Bool = true
     
     var body: some View {
         Button(action: {
@@ -21,13 +20,15 @@ struct CustomButton: View {
             isPlus = !isPlus
             
             if isPlus {
-                userData.choices.remove(labelText)
+                self.userData.removeChoice(choice: labelText)
             } else {
-                userData.choices.insert(labelText)
+                self.userData.insertChoice(choice: labelText)
             }
+            
+            print(isPlus)
             print(userData.choices)
         }){
-            if isPlus {
+            if !self.userData.containsChoice(choice: self.labelText) {
                 Label(labelText, systemImage: "plus.circle")
                     .foregroundColor(.red)
             } else {

@@ -13,7 +13,6 @@ struct Content: Identifiable {
 }
 
 struct ButtonGrid: View {
-    var searchText: String
     @EnvironmentObject private var userData: UserData
     
     let buttons = [
@@ -154,13 +153,10 @@ struct ButtonGrid: View {
     
     var body: some View {
         ForEach(buttons) { content in
-            
-            if content.text.lowercased().contains(self.searchText.lowercased()) || self.searchText == "" {
+            if content.text.lowercased().contains(userData.searchText.lowercased()) || userData.searchText == "" {
                 CustomButton(labelText: "\(content.text)")
             }
-            
-
         }
-        .environmentObject(UserData())
+        .environmentObject(self.userData)
     }
 }

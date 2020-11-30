@@ -15,4 +15,16 @@ final class UserData: ObservableObject {
     @Published var isPlus: Bool = true
     @Published var selected: Dictionary = Dictionary<String, Bool>()
     
+    func insertChoice(choice: String) -> Void {
+        choices.insert(choice)
+    }
+    
+    func containsChoice(choice: String) -> Bool {
+        return choices.contains(choice)
+    }
+    
+    func removeChoice(choice: String) -> Void {
+        choices.remove(choice)
+    }
+    
 }

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject private var userData: UserData
-    @State private var searchText:String = ""
     
     private var columns: [GridItem] = [
         GridItem(.adaptive(minimum: 175, maximum: 200))
@@ -17,22 +16,27 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            SearchBar(text: $searchText)
+            SearchBar(text: $userData.searchText)
             ScrollView {
                 CustomImage(image: Image("brainiac"))
                 LazyVGrid(
                     columns: columns,
-                    alignment: .center,
+                    alignment: .leading,
                     spacing: 16,
                     pinnedViews: [.sectionHeaders, .sectionFooters]
                 ) {
                     Section() {
-                        ButtonGrid(searchText: searchText)
+                        ButtonGrid()
+                            .environmentObject(userData)
                     }
                 }
             }
-            .padding()
+            
+            ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
+                .accentColor(.red)
+            Text("Accuracy")
         }
+        .padding()
     }
 }
 

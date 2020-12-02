@@ -12,23 +12,24 @@ import SwiftUI
 struct CustomButton: View {
     var labelText: String
     @EnvironmentObject private var userData: UserData
-    @State private var isPlus: Bool = true
     
     var body: some View {
         Button(action: {
             
-            isPlus = !isPlus
-            
-            if isPlus {
+            if self.userData.containsChoice(choice: labelText) {
                 self.userData.removeChoice(choice: labelText)
+                userData.selected[labelText] = true
             } else {
                 self.userData.insertChoice(choice: labelText)
+                userData.selected[labelText] = false
             }
             
-            print(isPlus)
-            print(userData.choices)
+            if userData.choices.count > 2 {
+                userData.predictDisease()                
+            }
+            
         }){
-            if !self.userData.containsChoice(choice: self.labelText) {
+            if (userData.selected[labelText] ?? true) {
                 Label(labelText, systemImage: "plus.circle")
                     .foregroundColor(.red)
             } else {
@@ -41,7 +42,14 @@ struct CustomButton: View {
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-        CustomButton(labelText: "SampleButton")
-            .environmentObject(UserData())
+        Group {
+            CustomButton(labelText: "SampleButton")
+                .environmentObject(UserData())
+                .environment(\.colorScheme, .light)
+            
+            CustomButton(labelText: "SampleButton")
+                .environmentObject(UserData())
+                .environment(\.colorScheme, .dark)
+        }
     }
 }

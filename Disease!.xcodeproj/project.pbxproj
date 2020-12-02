@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11271F9125769C0700E4FD1D /* DiseaseSymptomPrediction.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11271F9025769C0700E4FD1D /* DiseaseSymptomPrediction.mlmodel */; };
 		1168598E25742C3D00B79F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168598D25742C3D00B79F7B /* AppDelegate.swift */; };
 		1168599025742C3D00B79F7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168598F25742C3D00B79F7B /* SceneDelegate.swift */; };
 		1168599225742C3D00B79F7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168599125742C3D00B79F7B /* ContentView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11271F9025769C0700E4FD1D /* DiseaseSymptomPrediction.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DiseaseSymptomPrediction.mlmodel; sourceTree = "<group>"; };
 		1168598A25742C3D00B79F7B /* Disease!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Disease!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1168598D25742C3D00B79F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1168598F25742C3D00B79F7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		116859F12574445300B79F7B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				11271F9025769C0700E4FD1D /* DiseaseSymptomPrediction.mlmodel */,
 				116859D02574318D00B79F7B /* UserData.swift */,
 			);
 			path = Model;
@@ -302,6 +305,7 @@
 				116859C125742C9900B79F7B /* CustomButton.swift in Sources */,
 				1168598E25742C3D00B79F7B /* AppDelegate.swift in Sources */,
 				1168599025742C3D00B79F7B /* SceneDelegate.swift in Sources */,
+				11271F9125769C0700E4FD1D /* DiseaseSymptomPrediction.mlmodel in Sources */,
 				116859DE25743EBB00B79F7B /* SearchBar.swift in Sources */,
 				116859C625742E1900B79F7B /* ButtonGrid.swift in Sources */,
 				1168599225742C3D00B79F7B /* ContentView.swift in Sources */,

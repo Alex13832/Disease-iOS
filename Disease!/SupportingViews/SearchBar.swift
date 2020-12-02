@@ -42,6 +42,9 @@ import SwiftUI
 //    }
 //}
 
+
+// Thanks: https://direct.appcoda.com/swiftui-search-bar/
+
 struct SearchBar: View {
     @Binding var text: String
  

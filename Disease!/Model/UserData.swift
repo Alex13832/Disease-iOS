@@ -12,7 +12,6 @@ final class UserData: ObservableObject {
     
     @Published var choices: Set = Set<String>()
     @Published var searchText: String = ""
-    @Published var isPlus: Bool = true
     @Published var selected: [String: Bool] = [:]
     @Published var accuracy: Double = 0.0
     @Published var disease_label: String = ""
@@ -56,11 +55,9 @@ final class UserData: ObservableObject {
      Predicts the disease by taking the symptoms as input.
      */
     func predictDisease() -> Void {
-        
         if choices.isEmpty || choices.count > 16 {
             return
         }
-        
         // Needs to be sorted, that's the way the model was trained.
         var symptoms = Array(choices).sorted()
         
@@ -73,7 +70,6 @@ final class UserData: ObservableObject {
         for _ in symptoms.count...17 {
             symptoms.append("z")
         }
-        
         // Predicts the disease.
         let input = DiseaseSymptomPredictionInput(Symptom_1: symptoms[0], Symptom_2: symptoms[1],
                                                   Symptom_3: symptoms[2], Symptom_4: symptoms[3],
@@ -99,9 +95,8 @@ final class UserData: ObservableObject {
             disease_label = disease.Disease
             accuracy = max_value
             print(disease_label)
-            
         } catch {
-            print("Failed predicting disiease")
+            print("Failed predicting disease.")
         }
     }
 }

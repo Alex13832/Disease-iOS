@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-// TODO: User map to identify if isPlus from UserData. Current design can't rememeber selected.
-
 struct CustomButton: View {
     var labelText: String
     @EnvironmentObject private var userData: UserData

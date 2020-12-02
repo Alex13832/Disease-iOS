@@ -7,6 +7,7 @@
 
 import Combine
 import SwiftUI
+import CoreML
 
 final class UserData: ObservableObject {
     
@@ -15,8 +16,17 @@ final class UserData: ObservableObject {
     @Published var selected: [String: Bool] = [:]
     @Published var accuracy: Double = 0.0
     @Published var disease_label: String = ""
-    
-    private var model = DiseaseSymptomPrediction()
+        
+    // Initializes the disease prediction model.
+    let model: DiseaseSymptomPrediction = {
+        do {
+            let config = MLModelConfiguration()
+            return try DiseaseSymptomPrediction(configuration: config)
+        } catch {
+            print(error)
+            fatalError("Couldn't create DiseaseSymptomPrediction model.")
+        }
+    }()
     
     /**
      Inserts a choice into choices array.
@@ -80,6 +90,7 @@ final class UserData: ObservableObject {
                                                   Symptom_13: symptoms[12], Symptom_14: symptoms[13],
                                                   Symptom_15: symptoms[14], Symptom_16: symptoms[15],
                                                   Symptom_17: symptoms[16])
+        
         
         // Final steps, get the accuracy and the label.
         do {

@@ -47,7 +47,7 @@ struct ContentView: View {
                 trailing:
                     Button(action: {actionSheetVisible = !actionSheetVisible}) { Image(systemName: "arrow.right")}
                     .accentColor(.red)
-                    .disabled(userData.accuracy < 0.9 || userData.choices.count < 3)
+                    .disabled(userData.accuracy < 0.8 || userData.choices.count < 3)
             )
             .actionSheet(isPresented: $actionSheetVisible) { () -> ActionSheet in
                 ActionSheet(

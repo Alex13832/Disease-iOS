@@ -11,10 +11,6 @@ struct ContentView: View {
     @EnvironmentObject private var userData: UserData
     @State private var actionSheetVisible = false
     
-    private var columns: [GridItem] = [
-        GridItem(.adaptive(minimum: 175, maximum: 200))
-    ]
-    
     var body: some View {
         NavigationView {
             
@@ -22,11 +18,8 @@ struct ContentView: View {
                 SearchBar(text: $userData.searchText)
                     .padding(.bottom)
                 ScrollView {
-                    Text("🩺  🌡  ⛑")
-                        .font(.largeTitle)
-                        .multilineTextAlignment(.center)
                     LazyVGrid(
-                        columns: columns,
+                        columns: [GridItem(.adaptive(minimum: 175, maximum: 200))],
                         alignment: .leading,
                         spacing: 16,
                         pinnedViews: [.sectionHeaders, .sectionFooters]
@@ -37,7 +30,7 @@ struct ContentView: View {
                         }
                     }
                 }
-                if userData.accuracy > 0.0 {
+                if userData.accuracy > 0.0 && userData.choices.count > 2 {
                     ProgressView(value: userData.accuracy)
                         .accentColor(.red)
                     Text("Accuracy")
@@ -54,20 +47,16 @@ struct ContentView: View {
                 trailing:
                     Button(action: {actionSheetVisible = !actionSheetVisible}) { Image(systemName: "arrow.right")}
                     .accentColor(.red)
-                    .disabled(userData.accuracy < 0.85)
+                    .disabled(userData.accuracy < 0.9 || userData.choices.count < 3)
             )
             .actionSheet(isPresented: $actionSheetVisible) { () -> ActionSheet in
                 ActionSheet(
                     title:Text("\(userData.disease_label)"),
-                    message: Text("Consider consulting a physician"),
-                            buttons: [
-                                .default(Text("Ok"), action: {
-                                    print("Ok selected")
-                                }),
-                                .destructive(Text("Cancel"), action: {
-                                    print("Cancel selected")
-                                })
-                            ])
+                    message: Text("Consider consulting a physician for medical advice"),
+                    buttons: [
+                        .default(Text("OK"), action: {}),
+                        .destructive(Text("Cancel"), action: {})
+                    ])
             }
         }
     }
@@ -76,15 +65,12 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            
             ContentView()
                 .environmentObject(UserData())
                 .environment(\.colorScheme, .light)
-            
             ContentView()
                 .environmentObject(UserData())
                 .environment(\.colorScheme, .dark)
-            
         }
     }
 }

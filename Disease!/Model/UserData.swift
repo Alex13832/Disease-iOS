@@ -65,7 +65,7 @@ final class UserData: ObservableObject {
      Predicts the disease by taking the symptoms as input.
      */
     func predictDisease() -> Void {
-        if choices.isEmpty || choices.count > 16 {
+        if choices.count < 3 || choices.count > 16 {
             return
         }
         // Needs to be sorted, that's the way the model was trained.

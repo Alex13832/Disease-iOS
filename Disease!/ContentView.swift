@@ -36,7 +36,6 @@ struct ContentView: View {
                     Text("Accuracy")
                 }
             }
-            .padding()
             .navigationBarTitle(Text("Symptoms"))
             .navigationBarItems(
                 leading:
@@ -45,17 +44,18 @@ struct ContentView: View {
                     .disabled(userData.choices.count == 0)
                 ,
                 trailing:
-                    Button(action: {actionSheetVisible = !actionSheetVisible}) { Image(systemName: "arrow.right")}
+                    Button(action: {actionSheetVisible = true}) { Image(systemName: "arrow.right")}
                     .accentColor(.red)
                     .disabled(userData.accuracy < 0.8 || userData.choices.count < 3)
             )
+            .padding()
             .actionSheet(isPresented: $actionSheetVisible) { () -> ActionSheet in
                 ActionSheet(
                     title:Text("\(userData.disease_label)"),
-                    message: Text("Consider consulting a physician for medical advice"),
+                    message: Text("Consider consulting a physician"),
                     buttons: [
-                        .default(Text("OK"), action: {}),
-                        .destructive(Text("Cancel"), action: {})
+                        .default(Text("OK"), action: {print("hej")}),
+                        .destructive(Text("Cancel"), action: {print("hej")})
                     ])
             }
         }

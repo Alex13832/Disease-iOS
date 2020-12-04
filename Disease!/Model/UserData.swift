@@ -28,6 +28,8 @@ final class UserData: ObservableObject {
         }
     }()
     
+    //let model = DiseaseSymptomPrediction()
+    
     /**
      Inserts a choice into choices array.
      - parameter choice: A string value that is a symptom that is to be inserted.

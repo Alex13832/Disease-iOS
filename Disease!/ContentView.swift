@@ -54,8 +54,8 @@ struct ContentView: View {
                     title:Text("\(userData.disease_label)"),
                     message: Text("Consider consulting a physician"),
                     buttons: [
-                        .default(Text("OK"), action: {print("hej")}),
-                        .destructive(Text("Cancel"), action: {print("hej")})
+                        .default(Text("OK"), action: {}),
+                        .destructive(Text("Cancel"), action: {})
                     ])
             }
         }

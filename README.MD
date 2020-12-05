@@ -1,4 +1,4 @@
-Disease!
+Disease! 🤕
 ===============
 Disease is a sample app that predicts diseases from a set of chosen symptons selected in the app. The app is utilizing a CoreML model trained in CreateML with data downloaded from Kaggle.
 

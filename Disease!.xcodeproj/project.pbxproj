@@ -14,8 +14,6 @@
 		1168599425742C3E00B79F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1168599325742C3E00B79F7B /* Assets.xcassets */; };
 		1168599725742C3E00B79F7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1168599625742C3E00B79F7B /* Preview Assets.xcassets */; };
 		1168599A25742C3E00B79F7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1168599825742C3E00B79F7B /* LaunchScreen.storyboard */; };
-		116859A525742C3E00B79F7B /* Disease_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116859A425742C3E00B79F7B /* Disease_Tests.swift */; };
-		116859B025742C3E00B79F7B /* Disease_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116859AF25742C3E00B79F7B /* Disease_UITests.swift */; };
 		116859C125742C9900B79F7B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116859C025742C9900B79F7B /* CustomButton.swift */; };
 		116859C625742E1900B79F7B /* ButtonGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116859C525742E1900B79F7B /* ButtonGrid.swift */; };
 		116859D12574318D00B79F7B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116859D02574318D00B79F7B /* UserData.swift */; };
@@ -51,11 +49,7 @@
 		1168599925742C3E00B79F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1168599B25742C3E00B79F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		116859A025742C3E00B79F7B /* Disease!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Disease!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		116859A425742C3E00B79F7B /* Disease_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disease_Tests.swift; sourceTree = "<group>"; };
-		116859A625742C3E00B79F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		116859AB25742C3E00B79F7B /* Disease!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Disease!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		116859AF25742C3E00B79F7B /* Disease_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disease_UITests.swift; sourceTree = "<group>"; };
-		116859B125742C3E00B79F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		116859C025742C9900B79F7B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		116859C525742E1900B79F7B /* ButtonGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGrid.swift; sourceTree = "<group>"; };
 		116859D02574318D00B79F7B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
@@ -92,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				1168598C25742C3D00B79F7B /* Disease! */,
-				116859A325742C3E00B79F7B /* Disease!Tests */,
-				116859AE25742C3E00B79F7B /* Disease!UITests */,
 				1168598B25742C3D00B79F7B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,24 +123,6 @@
 				1168599625742C3E00B79F7B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		116859A325742C3E00B79F7B /* Disease!Tests */ = {
-			isa = PBXGroup;
-			children = (
-				116859A425742C3E00B79F7B /* Disease_Tests.swift */,
-				116859A625742C3E00B79F7B /* Info.plist */,
-			);
-			path = "Disease!Tests";
-			sourceTree = "<group>";
-		};
-		116859AE25742C3E00B79F7B /* Disease!UITests */ = {
-			isa = PBXGroup;
-			children = (
-				116859AF25742C3E00B79F7B /* Disease_UITests.swift */,
-				116859B125742C3E00B79F7B /* Info.plist */,
-			);
-			path = "Disease!UITests";
 			sourceTree = "<group>";
 		};
 		116859ED2574442E00B79F7B /* SupportingViews */ = {
@@ -316,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				116859A525742C3E00B79F7B /* Disease_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				116859B025742C3E00B79F7B /* Disease_UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

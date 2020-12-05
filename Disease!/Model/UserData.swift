@@ -16,6 +16,7 @@ final class UserData: ObservableObject {
     @Published var selected: [String: Bool] = [:]
     @Published var accuracy: Double = 0.0
     @Published var disease_label: String = ""
+    @Published var symptoms = symptomData
         
     // Initializes the disease prediction model.
     let model: DiseaseSymptomPrediction = {

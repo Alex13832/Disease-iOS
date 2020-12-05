@@ -1,0 +1,667 @@
+[
+    {
+        "symptom":"Abdominal pain",
+        "id": 100
+        
+    },
+    {
+        "symptom":"Abnormal menstruation",
+        "id": 101
+        
+    },
+    {
+        "symptom":"Acidity",
+        "id": 102
+        
+    },
+    {
+        "symptom":"Acute liver failure",
+        "id": 103
+        
+    },
+    {
+        "symptom":"Altered sensorium",
+        "id": 104
+        
+    },
+    {
+        "symptom":"Anxiety",
+        "id": 105
+        
+    },
+    {
+        "symptom":"Back pain",
+        "id": 106
+        
+    },
+    {
+        "symptom":"Belly pain",
+        "id": 107
+        
+    },
+    {
+        "symptom":"Blackheads",
+        "id": 108
+        
+    },
+    {
+        "symptom":"Bladder discomfort",
+        "id": 109
+        
+    },
+    {
+        "symptom":"Blister",
+        "id": 110
+        
+    },
+    {
+        "symptom":"Blood in sputum",
+        "id": 111
+        
+    },
+    {
+        "symptom":"Bloody stool",
+        "id": 112
+        
+    },
+    {
+        "symptom":"Blurred and distorted vision",
+        "id": 113
+        
+    },
+    {
+        "symptom":"Breathlessness",
+        "id": 114
+        
+    },
+    {
+        "symptom":"Brittle nails",
+        "id": 115
+        
+    },
+    {
+        "symptom":"Bruising",
+        "id": 116
+        
+    },
+    {
+        "symptom":"Burning micturition",
+        "id": 117
+        
+    },
+    {
+        "symptom":"Chest pain",
+        "id": 118
+        
+    },
+    {
+        "symptom":"Chills",
+        "id": 119
+        
+    },
+    {
+        "symptom":"Cold hands and feets",
+        "id": 120
+        
+    },
+    {
+        "symptom":"Coma",
+        "id": 121
+        
+    },
+    {
+        "symptom":"Congestion",
+        "id": 122
+        
+    },
+    {
+        "symptom":"Constipation",
+        "id": 123
+        
+    },
+    {
+        "symptom":"Continuous feel of urine",
+        "id": 124
+        
+    },
+    {
+        "symptom":"Continuous sneezing",
+        "id": 125
+        
+    },
+    {
+        "symptom":"Cough",
+        "id": 126
+        
+    },
+    {
+        "symptom":"Cramps",
+        "id": 127
+        
+    },
+    {
+        "symptom":"Dark urine",
+        "id": 128
+        
+    },
+    {
+        "symptom":"Dehydration",
+        "id": 129
+        
+    },
+    {
+        "symptom":"Depression",
+        "id": 130
+        
+    },
+    {
+        "symptom":"Diarrhoea",
+        "id": 131
+        
+    },
+    {
+        "symptom":"Dischromic patches",
+        "id": 132
+        
+    },
+    {
+        "symptom":"Distention of abdomen",
+        "id": 133
+        
+    },
+    {
+        "symptom":"Dizziness",
+        "id": 134
+        
+    },
+    {
+        "symptom":"Drying and tingling lips",
+        "id": 135
+        
+    },
+    {
+        "symptom":"Enlarged thyroid",
+        "id": 136
+        
+    },
+    {
+        "symptom":"Excessive hunger",
+        "id": 137
+        
+    },
+    {
+        "symptom":"Extra marital contacts",
+        "id": 138
+        
+    },
+    {
+        "symptom":"Family history",
+        "id": 139
+        
+    },
+    {
+        "symptom":"Fast heart rate",
+        "id": 140
+        
+    },
+    {
+        "symptom":"Fatigue",
+        "id": 141
+        
+    },
+    {
+        "symptom":"Fluid overload",
+        "id": 142
+        
+    },
+    {
+        "symptom":"Fluid overload",
+        "id": 143
+        
+    },
+    {
+        "symptom":"Foul smell ofurine",
+        "id": 144
+        
+    },
+    {
+        "symptom":"Headache",
+        "id": 145
+        
+    },
+    {
+        "symptom":"High fever",
+        "id": 146
+        
+    },
+    {
+        "symptom":"Hip joint pain",
+        "id": 147
+        
+    },
+    {
+        "symptom":"History of alcohol consumption",
+        "id": 148
+        
+    },
+    {
+        "symptom":"Increased appetite",
+        "id": 149
+        
+    },
+    {
+        "symptom":"Indigestion",
+        "id": 150
+        
+    },
+    {
+        "symptom":"Inflammatory nails",
+        "id": 151
+        
+    },
+    {
+        "symptom":"Internal itching",
+        "id": 152
+        
+    },
+    {
+        "symptom":"Irregular sugar level",
+        "id": 153
+        
+    },
+    {
+        "symptom":"Irritability",
+        "id": 154
+        
+    },
+    {
+        "symptom":"Irritation in anus",
+        "id": 155
+        
+    },
+    {
+        "symptom":"Itching",
+        "id": 156
+        
+    },
+    {
+        "symptom":"Joint pain",
+        "id": 157
+        
+    },
+    {
+        "symptom":"Knee pain",
+        "id": 158
+        
+    },
+    {
+        "symptom":"Lack of concentration",
+        "id": 159
+        
+    },
+    {
+        "symptom":"Lethargy",
+        "id": 160
+        
+    },
+    {
+        "symptom":"Loss of appetite",
+        "id": 161
+        
+    },
+    {
+        "symptom":"Loss of balance",
+        "id": 162
+        
+    },
+    {
+        "symptom":"Loss of smell",
+        "id": 163
+        
+    },
+    {
+        "symptom":"Malaise",
+        "id": 164
+        
+    },
+    {
+        "symptom":"Mild fever",
+        "id": 165
+        
+    },
+    {
+        "symptom":"Mood swings",
+        "id": 166
+        
+    },
+    {
+        "symptom":"Movement stiffness",
+        "id": 167
+        
+    },
+    {
+        "symptom":"Mucoid sputum",
+        "id": 168
+        
+    },
+    {
+        "symptom":"Muscle pain",
+        "id": 169
+        
+    },
+    {
+        "symptom":"Muscle wasting",
+        "id": 170
+        
+    },
+    {
+        "symptom":"Muscle weakness",
+        "id": 171
+        
+    },
+    {
+        "symptom":"Nausea",
+        "id": 172
+        
+    },
+    {
+        "symptom":"Neck pain",
+        "id": 173
+        
+    },
+    {
+        "symptom":"Nodal skin eruptions",
+        "id": 174
+        
+    },
+    {
+        "symptom":"Obesity",
+        "id": 175
+        
+    },
+    {
+        "symptom":"Pain behind the eyes",
+        "id": 176
+        
+    },
+    {
+        "symptom":"Pain during bowel movements",
+        "id": 177
+        
+    },
+    {
+        "symptom":"Pain in anal region",
+        "id": 178
+        
+    },
+    {
+        "symptom":"Painful walking",
+        "id": 179
+        
+    },
+    {
+        "symptom":"Palpitations",
+        "id": 180
+        
+    },
+    {
+        "symptom":"Passage of gases",
+        "id": 181
+        
+    },
+    {
+        "symptom":"Patches in throat",
+        "id": 182
+        
+    },
+    {
+        "symptom":"Phlegm",
+        "id": 183
+        
+    },
+    {
+        "symptom":"Polyuria",
+        "id": 184
+        
+    },
+    {
+        "symptom":"Prognosis",
+        "id": 185
+        
+    },
+    {
+        "symptom":"Prominent veins on calf",
+        "id": 186
+        
+    },
+    {
+        "symptom":"Puffy face and eyes",
+        "id": 187
+        
+    },
+    {
+        "symptom":"Pus filled pimples",
+        "id": 188
+        
+    },
+    {
+        "symptom":"Receiving blood transfusion",
+        "id": 189
+        
+    },
+    {
+        "symptom":"Receiving unsterile injections",
+        "id": 190
+        
+    },
+    {
+        "symptom":"Red sore around nose",
+        "id": 191
+        
+    },
+    {
+        "symptom":"Red spots over body",
+        "id": 192
+        
+    },
+    {
+        "symptom":"Redness of eyes",
+        "id": 193
+        
+    },
+    {
+        "symptom":"Restlessness",
+        "id": 194
+        
+    },
+    {
+        "symptom":"Runny nose",
+        "id": 195
+        
+    },
+    {
+        "symptom":"Rusty sputum",
+        "id": 196
+        
+    },
+    {
+        "symptom":"Scurring",
+        "id": 197
+        
+    },
+    {
+        "symptom":"Shivering",
+        "id": 198
+        
+    },
+    {
+        "symptom":"Silver like dusting",
+        "id": 199
+        
+    },
+    {
+        "symptom":"Sinus pressure",
+        "id": 200
+        
+    },
+    {
+        "symptom":"Skin peeling",
+        "id": 201
+        
+    },
+    {
+        "symptom":"Skin rash",
+        "id": 202
+        
+    },
+    {
+        "symptom":"Slurred speech",
+        "id": 203
+        
+    },
+    {
+        "symptom":"Small dents in nails",
+        "id": 204
+        
+    },
+    {
+        "symptom":"Spinning movements",
+        "id": 205
+        
+    },
+    {
+        "symptom":"Spotting urination",
+        "id": 206
+        
+    },
+    {
+        "symptom":"Stiff neck",
+        "id": 207
+        
+    },
+    {
+        "symptom":"Stomach bleeding",
+        "id": 208
+        
+    },
+    {
+        "symptom":"Stomach pain",
+        "id": 209
+        
+    },
+    {
+        "symptom":"Sunken eyes",
+        "id": 210
+        
+    },
+    {
+        "symptom":"Sweating",
+        "id": 211
+        
+    },
+    {
+        "symptom":"Swelled lymph nodes",
+        "id": 212
+        
+    },
+    {
+        "symptom":"Swelling joints",
+        "id": 213
+        
+    },
+    {
+        "symptom":"Swelling of stomach",
+        "id": 214
+        
+    },
+    {
+        "symptom":"Swollen blood vessels",
+        "id": 215
+        
+    },
+    {
+        "symptom":"Swollen extremeties",
+        "id": 216
+        
+    },
+    {
+        "symptom":"Swollen legs",
+        "id": 217
+        
+    },
+    {
+        "symptom":"Throat irritation",
+        "id": 218
+        
+    },
+    {
+        "symptom":"Toxic look (typhos)",
+        "id": 219
+        
+    },
+    {
+        "symptom":"Ulcers on tongue",
+        "id": 220
+        
+    },
+    {
+        "symptom":"Unsteadiness",
+        "id": 221
+        
+    },
+    {
+        "symptom":"Visual disturbances",
+        "id": 222
+        
+    },
+    {
+        "symptom":"Vomiting",
+        "id": 223
+        
+    },
+    {
+        "symptom":"Watering from eyes",
+        "id": 224
+        
+    },
+    {
+        "symptom":"Weakness in limbs",
+        "id": 225
+        
+    },
+    {
+        "symptom":"Weakness of one body side",
+        "id": 226
+        
+    },
+    {
+        "symptom":"Weight gain",
+        "id": 227
+        
+    },
+    {
+        "symptom":"Weight loss",
+        "id": 228
+        
+    },
+    {
+        "symptom":"Yellow crust ooze",
+        "id": 229
+        
+    },
+    {
+        "symptom":"Yellow urine",
+        "id": 230
+        
+    },
+    {
+        "symptom":"Yellowing of eyes",
+        "id": 231
+        
+    },
+    {
+        "symptom":"Yellowish skin)",
+        "id": 232
+        
+    }
+]
